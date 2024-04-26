@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer # type: ignore
 app = Flask(__name__)
 
 # Initialize ChromaDB client and collection
-client = chromadb.PersistentClient(path="D:/search engine final project/vectordb")
+client = chromadb.PersistentClient(path="vectordb")
 collection = client.get_collection(name="Data")
 
 # Load the SentenceTransformer model
